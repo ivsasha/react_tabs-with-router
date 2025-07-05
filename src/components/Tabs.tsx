@@ -33,9 +33,11 @@ export const Tabs: React.FC = () => {
           </ul>
         </div>
 
-        <div className="block" data-cy="TabContent">
-          {content}
-        </div>
+        {content && (
+          <div className="block" data-cy="TabContent">
+            {content}
+          </div>
+        )}
 
         {!content && (
           <div className="block" data-cy="TabContent">

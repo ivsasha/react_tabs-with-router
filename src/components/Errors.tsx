@@ -8,7 +8,7 @@ export const Errors: React.FC = () => {
     setTimeout(() => {
       navigate('/');
     }, 3000);
-  });
+  }, [navigate]);
 
   return (
     <div className="section">
